@@ -11,8 +11,9 @@ menuIcon.addEventListener("click", function(){
 });
 
 var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
+  spaceBetween: 50,
     centeredSlides: true,
+    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

@@ -15,14 +15,15 @@ body {
   font-weight: 400;
   font-size: 2rem;
   box-sizing: border-box;
-  color: aliceblue;
-  background-color: #401E12;
+ 
+  
 }
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
+    color: white;
 }
 
 h2{
@@ -50,7 +51,7 @@ h2{
 .bar{
     width: 3.5rem;
   height: 0.5rem;
-  background-color:#401E12;
+  background-color: #733F2C;
   margin: 0.5rem;
 }
 .nav-list{
@@ -60,6 +61,9 @@ h2{
     height: 100vh;
     width: 100%; 
     
+}
+.nav-list-desktop{
+  display: none; 
 }
 .nav-list-item{
     display: block;
@@ -77,14 +81,14 @@ color: aliceblue;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 1rem;
+    
 }
 .swiper-container {
     width: 100%;
     height: 100%;
 
   }
-
+ 
   .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -119,15 +123,16 @@ color: aliceblue;
 
   }
  .slide1{
-   background-image: url("imgs/grinder.jfif");
+   background-image:url("imgs/bean-line.jfif");
    background-position: center;
+   background-repeat: no-repeat;
  }
  .slide2{
   background-image: url("imgs/bean-line.jfif");
   background-position: center;
 }
 .slide3{
-  background-image: url("imgs/coffe-background.jfif");
+  background-image: url("imgs/bean-line.jfif");
   background-position: center;
 }
 
@@ -148,36 +153,168 @@ color: aliceblue;
 }
 
 .about-us-paragraph{
+  background-image: url("imgs/coffe-background.jfif");
+}
+.about-us-btn{
+  color: white;
+  background-color: #733F2C;
+  padding: 1rem;
+  width: fit-content;
+}
+.about-us-paragraph-content{
+  display: block;
   font-size: 1.5rem;
   line-height: 2rem;
+  background-color: white;
+  padding: 1rem;
 }
-.about-us-img{
-  width: 95vw;
-}
-
-.suppliers-container,
-.clients-container{
+.suppliers-logos,
+.clients-logos{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1rem;
+  height: 40vh;
 }
-.suppliers-container-element{
-  background-color: white;
-}
-.contact-btn{
+
+.join-btn{
   background-color: #733F2C;
   width: 80vw;
   margin: auto;
   text-align: center;
   padding: 1rem;
 }
-.contact-btn a{
-  color:white;
+.products-main{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
+
+.product-card{
+  margin: 2rem 0 2rem 0;
+  padding: 3rem;
+  border-color: #A66844;
+  border-style: solid;
+}
+.product-cats a{
+  color: #733F2C;
+}
+.product-card-header{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
 .footer{
   font-size: 1.5rem;
   background-color:#D9A796;
   height: 25vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.footer-logo,
+.contact.list{
+  height: 8rem;
+}
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 992px){
+.header{
+  width: 100vw;
+  margin: auto;
+  
+}
+.about-us,
+.suppliers,
+.clients{
+  width: 962px;
+  margin: auto;
+  padding: 10rem;
+}
+.navbar,
+.brand-box,
+.main-logo{
+  height: 9rem;
+}
+.nav-menu-btn,
+.nav-list{
+ display: none;
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list-desktop{
+  display: flex;
+}
+.slide1,
+  .slide2,
+  .slide3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.about-us-header,
+.suppliers-heading,
+.clients-heading{
+  font-size: 4rem;
+  font-weight: 400;
+}
+.about-us-paragraph-content{
+  display: block;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  background-color: white;
+  padding: 3rem;
+}
+.suppliers-logos,
+.clients-logos{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.suppliers-container-element{
+  height: fit-content;
+}
+.join-btn{
+ width: 40rem;
+ height: 5rem;
+}
+.product-cats{
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-card{
+  width: 20vw;
+  margin: 3rem;
+  padding: 3rem;
+  border-color: #A66844;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-card img{
+  display: block;
+}
 }
