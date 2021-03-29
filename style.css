@@ -209,7 +209,6 @@ color: aliceblue;
   font-size: 1.5rem;
   background-color:#D9A796;
   height: 25vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,8 +232,11 @@ color: aliceblue;
   justify-content: space-evenly;
 }
 @media (min-width: 992px){
+  body{
+    overflow-x: hidden;
+  }
 .header{
-  width: 100vw;
+  width: 100%;
   margin: auto;
   
 }
@@ -300,12 +302,12 @@ color: aliceblue;
 }
 .product-cats{
   height: 100vh;
-  width: 50vw;
+  width: 62rem;
   display: flex;
   flex-wrap: wrap;
 }
 .product-card{
-  width: 20vw;
+  width: 25rem;
   margin: 3rem;
   padding: 3rem;
   border-color: #A66844;
@@ -317,4 +319,5 @@ color: aliceblue;
 .product-card img{
   display: block;
 }
+
 }
